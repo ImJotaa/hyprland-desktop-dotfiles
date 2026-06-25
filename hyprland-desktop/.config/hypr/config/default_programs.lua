@@ -1,6 +1,6 @@
 local default_programs	= {
 
-	terminal	= "foot",
+	terminal	= "kitty",
 	fileManager	= "dolphin",
 	menu		= "hyprlauncher"
 }
