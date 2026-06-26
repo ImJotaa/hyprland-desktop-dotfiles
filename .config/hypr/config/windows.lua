@@ -17,22 +17,8 @@ hl.config({
 -- WINDOW BEHAVIOUR --
 hl.window_rule({ match = { class = ".*" }, float = true })
 
--- Set random location for the new windows
-hl.on("window.open", function(w)
-	local mw, mh = w.monitor.width, w.monitor.height
-	local ww, wh = w.size.x, w.size.y
+-- Set location for the new windows
 
-	local cx = math.random(math.floor(mw * 0.30), math.floor(mw * 0.70))
-	local cy = math.random(math.floor(mh * 0.25), math.floor(mh * 0.60))
-
-	local x = cx - math.floor(ww / 2)
-	local y = cy - math.floor(mh / 2)
-
-	x = math.max(0, math.min(x, mw - ww))
-	y = math.max(0, math.min(y, mh - wh))
-
-	hl.dispatch(hl.dsp.window.move({ x = x, y = y, window = w }))
-end)
 
 -- WINDOW SIZE --
 hl.window_rule({ match = { float = true }, size = {1200, 600} })
