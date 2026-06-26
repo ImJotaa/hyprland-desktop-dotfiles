@@ -18,4 +18,4 @@ hl.bind(mainMod .. " + up", hl.dsp.focus({ direction = "u" }))
 hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "d" }))
 
 -- Window arrangement keybinds --
-hl.bind(mainMod .. " + mouse:272", hl.dsp.layout("swapwithmaster"))
+hl.bind(mainMod .. " + mouse:274", hl.dsp.window.drag(), { mouse = true})

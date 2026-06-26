@@ -3,8 +3,8 @@ require("config/wallpaper")
 require("config/default_programs")
 require("config/keybinds")
 require("config/autostart")
-require("config/window_layout")
-require("config/window_decorations")
+require("config/windows")
+require("config/decorations")
 
 hl.config({
 	input = {
